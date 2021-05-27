@@ -90,7 +90,7 @@ a {
 
 .text-container {
   overflow:hidden;
-  padding:5rem;
+  padding:2rem;
 }
 .text-deco{
   display:block;
@@ -112,8 +112,8 @@ a {
   position: absolute;
   top: 0px;
   left: 0px;
-  -webkit-clip-path: ellipse(400px 400px at 50% 0%);
-  clip-path: ellipse(400px 400px at 0% 50%);
+  -webkit-clip-path: ellipse(400px 400px at 100% 50%);
+  clip-path: ellipse(400px 400px at 100% 50%);
   animation: spotlight 5s infinite;
   background-image: url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
   background-size: 150%;
