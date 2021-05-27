@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional");
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
-* *::before,
-*::after {
-  
-}
 
 
 
@@ -580,12 +576,22 @@ header {
   margin: 2rem;
 }
 
+/* option-3 */
 .static-background {
   background-size: 100% auto;
-  background-position: top;
+  background-position: top ;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./assets/img/index/staticBG_2.jpg");
+  background-image: url("./assets/img/index/trial-3.jpg");
+}
+
+.static-background {
+  border:solid red;
+  background-size: 100% auto;
+  background-position: bottom ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/img/index/trial-4.jpg");
 }
 
 
@@ -689,7 +695,7 @@ header {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url("./assets/img/index/cooling.jpg" alt="" class="category-img");
+  background-image: url("./assets/img/index/cooling.jpg" );
 }
 
 #item-4 > img {
