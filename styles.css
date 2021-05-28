@@ -172,6 +172,7 @@ a {
   margin: 0 auto 0 auto;
   overflow:hidden;
 
+
 }
 
 
@@ -576,24 +577,50 @@ header {
   margin: 2rem;
 }
 
+
+/* option-2 */
+/* .static-background {
+  background-size: 100% auto;
+  background-position: bottom 70px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/img/index/trial-2.jpg");
+} */
+
 /* option-3 */
-.static-background {
+/* .static-background {
   background-size: 100% auto;
   background-position: top ;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./assets/img/index/trial-3.jpg");
-}
+} */
 
-.static-background {
-  border:solid red;
+/* option-4 */
+/* .static-background {
   background-size: 100% auto;
   background-position: bottom ;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./assets/img/index/trial-4.jpg");
+} */
+
+/* option5 */
+.static-background {
+  background-size: 100% auto;
+  background-position: bottom 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/img/index/trial-5.jpg");
 }
 
+.static-background {
+  background-size: 100% auto;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/img/index/trial-3.jpg");
+}
 
 /* focus */
 .particles-reference {
@@ -653,13 +680,14 @@ header {
 }
 
 .focus-name {
-   top: 50%; 
+   top: 70%; 
     /* transform: translate(-50%, -50%); */
-    
+
     position: absolute;
     color: white;
     z-index: 99;
-    font-size: 2rem;
+    white-space:nowrap;
+    font-size: 3rem;
   }
 
 .category-img {
@@ -721,6 +749,7 @@ header {
 }
 
 .about-content {
+
   display:flex;
   flex-direction:column;
 }
@@ -1112,26 +1141,40 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* static-bg */
 
 .about-wrapper {
-  margin-bottom: 3rem;
-  overflow:hidden
+  width:100%;
+  padding-top:3rem;
+  padding-bottom:3rem;
+  overflow:hidden;
+  
+}
+
+
+.about-content {
+  width:100%;
+  position:relative;
+  margin-top:5rem;
+  margin-bottom:5rem;
+  /* display:flex;
+  flex-direction: row; */
+}
+
+.about-img {
+  all:unset;
+  width:70%;
 }
 
 .aboutBG-img {
-  opacity:0.7;
-  width:60rem;
-  height:34rem;
-}
-
-.about-content {
-  margin:5rem;
-  display:flex;
-  flex-direction: row;
+  all:unset;
+  width:100%;
+  opacity:0.6;
+  height:auto;
 }
 
 .about-description{
   all:unset;
-  position:relative;
-  right: 10rem;
+  position:absolute;
+  top:30%;
+  left:50%;
   width: 50%;
   display: flex;
   flex-direction:column;
