@@ -134,11 +134,24 @@ $('#youtube').magnificPopup({
 //text scroller
 $(document).on("scroll", function () {
 
+
+
+  if (screen.width <= 768) {
+    //scroll位置可以在max後面數字改變
+    $(".text-1").css("left", Math.max(1000 - 0.35 * window.scrollY) + "px");
+
+    $(".text-2").css("right", Math.max(1300 - 0.32 * window.scrollY) + "px");
+
+
+    $(".text-3").css("left", Math.max(1200 - 0.3 * window.scrollY) + "px");
+  }
+
   //scroll位置可以在max後面數字改變
-  $(".text-1").css("left", Math.max(1550 - 0.35 * window.scrollY) + "px");
+  // $(".text-1").css("left", Math.max(1400 - 0.35 * window.scrollY) + "px");
+
+  // $(".text-2").css("right", Math.max(1500 - 0.35 * window.scrollY) + "px");
 
 
-  $(".text-3").css("left", Math.max(1400 - 0.3 * window.scrollY) + "px");
+  // $(".text-3").css("left", Math.max(1400 - 0.3 * window.scrollY) + "px");
 
-  $(".text-2").css("right", Math.max(1500 - 0.35 * window.scrollY) + "px");
 });

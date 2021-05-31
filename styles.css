@@ -34,7 +34,7 @@ h4,
 h5 {
   margin: 0;
   line-height: 0.9;
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   font-family: 'Chakra Petch', sans-serif;
 }
@@ -61,12 +61,14 @@ a {
 .slick-prev {
     z-index: 9999;
     left:1rem;
+    top:9rem;
     font-size: 1.5rem;
 }
 
 .slick-next {
    z-index: 9999;
    right:2rem;
+   top:9rem;
    font-size: 1.5rem;
 }
 
@@ -660,7 +662,6 @@ canvas{
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding:5rem;
 
 }
@@ -707,7 +708,7 @@ canvas{
     color: white;
     /* z-index: 99; */
     white-space:nowrap;
-    font-size: 2rem;   
+    font-size: 1.5rem;   
   }
 
 
@@ -819,6 +820,7 @@ canvas{
 
   display:flex;
   flex-direction:column;
+  margin-top: 3rem;
 }
 
 .aboutBG-img {
@@ -830,6 +832,7 @@ canvas{
 .about-description{
   position:relative;
   top:0;
+  padding:3rem;
   /* top:10px; */
   
 }
@@ -910,7 +913,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   .office-address {
     color:white;
     margin-top:2rem;
-    white-space: nowrap;
+    /* white-space: nowrap; */
   }
 
   .office-location {
@@ -1129,12 +1132,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .slick-prev {
     z-index: 9999;
+    top:10rem;
     left: 20rem;
     font-size: 30px;
 }
 
 .slick-next {
    z-index: 9999;
+    top:20rem;
    right: 20rem ;
 }
 
