@@ -725,7 +725,6 @@ canvas{
   border-radius: 50%;
   display: block;
   cursor:pointer;
-
   -webkit-filter:  contrast(2);
 	filter:  saturate(1.5);
 	-webkit-transition: .3s ease-in-out;
@@ -736,34 +735,12 @@ canvas{
 }
 
 
-
-.category-img:hover{
- filter: blur(3px);
- transform:scale(1.2);
- border-radius:0;
-
-}
-
-  
   .focus-description {
     display:none;
-   width:100%;
-   top:0;
-   transform: translate(0%, 50%);
-    position: absolute;
-    color: white;
 
-    text-align:left;
-    font-size: 2rem;  
-    transition:width 1s, height 1s;
 
-	
   }
 
-.focus-item:hover .focus-description{
-   display:unset;
-  transition: opacity 0.3s ease-out;
-  }
 
 
 
@@ -871,7 +848,8 @@ canvas{
 
 .quote-content-title{
   margin-bottom: 2rem;
-  font-size: 4rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 .quote-img {
@@ -1059,6 +1037,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   }
 
+  
+
   .focus-content > #item-1 {
     grid-area: a;
   }
@@ -1077,6 +1057,54 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   .focus-name{
     font-size: 3rem;
+  }
+
+
+  .category-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+  cursor:pointer;
+  -webkit-filter:  contrast(2);
+	filter:  saturate(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  /* -webkit-box-shadow: 0 0 15px #f3d42e ;
+  -moz-box-shadow: 0 0 15px #f3d42e ; */
+  box-shadow: 0 0 70px #1167d8 ;
+}
+
+
+
+.focus-item:hover .category-img{
+ filter: blur(3px);
+ transform:scale(1.2);
+ border-radius:0;
+
+}
+
+  
+  .focus-description {
+    display:unset;
+    visibility: hidden; 
+    width:100%;
+    top:0;
+    transform: translate(0%, 50%);
+    position: absolute;
+    color: white;
+    text-align:left;
+    font-size: 2rem; 
+    
+
+  }
+
+.focus-item:hover .focus-description{
+    visibility: visible;
+    transition: all 0.8s 0.2s ease-in
+ 
   }
 
   /* .focus-item {
