@@ -35,8 +35,9 @@ h5 {
   margin: 0;
   line-height: 0.9;
   font-size: 3rem;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Chakra Petch', sans-serif;
+  border:solid red;
 }
 
 p {
