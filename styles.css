@@ -1104,13 +1104,14 @@ p {
   .focus-description {
     display:unset;
     visibility: hidden; 
+    position: absolute;
     width:100%;
     top:0;
     transform: translate(0%, 50%);
-    position: absolute;
     color: white;
     text-align:left;
-    font-size: 2rem; 
+    font-size: 1rem; 
+    line-height: 100%;
     
 
   }
@@ -1357,21 +1358,11 @@ p{
 
   
   .focus-description {
-    display:unset;
-    visibility: hidden; 
-    width:100%;
-    top:0;
-    transform: translate(0%, 50%);
-    position: absolute;
-    color: white;
-    text-align:left;
-    font-size: 2rem; 
-    
-
+ 
+    font-size: 1.5rem; 
+    line-height: 100%;
+  
   }
-
-
-
 
 
 .quote-content-title{
@@ -1424,6 +1415,9 @@ p{
     font-size: 2.4rem;
   }
   
+   .focus-description {
+    font-size: 1.8rem; 
+  }
 
 .quote-content-title{
   font-size: 2.7rem;
@@ -1468,6 +1462,10 @@ p{
 
 .focus-name{
     font-size: 3rem;
+  }
+
+.focus-description {
+    font-size: 2rem; 
   }
   
 
