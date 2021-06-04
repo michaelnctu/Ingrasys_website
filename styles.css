@@ -744,8 +744,7 @@ canvas{
   left: 0;
   bottom: 0;
   right: 0;
-  background-size: 120% auto;
-  background-image: url("./assets/img/index/hci.jpg");
+  /* background-image: url("./assets/img/index/hci.jpg"); */
 }
 
 
@@ -756,8 +755,8 @@ canvas{
   left: 0;
   bottom: 0;
   right: 0;
-  background-size: cover;
-  background-image: url("./assets/img/index/hpc.jpg");
+  object-fit: cover;
+
 }
 
 #item-3 > img {
@@ -766,8 +765,7 @@ canvas{
   left: 0;
   bottom: 0;
   right: 0;
-  background-size: 80% auto;
-  background-image: url("./assets/img/index/Cool.PNG" );
+
 }
 
 #item-4 > img {
@@ -776,9 +774,7 @@ canvas{
   left: 0;
   bottom: 0;
   right: 0;
-  background-size: cover;
-  background-position-x: left;
-  background-image: url("./assets/img/index/smartmanu.jpg");
+
 }
 
 
