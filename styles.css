@@ -82,19 +82,7 @@ a {
   font-size:50px;
 }
 
-/* .blockquote {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-} */
 
-/* .quote-content{
-  text-align:center;
-} */
-
-/* .quote-img, .quote-content-title, .quote-content-paragraph {
-  margin-bottom:3rem;
-} */
 
 .text-container {
   display:flex;
@@ -714,7 +702,7 @@ canvas{
   height: 100%;
   background-size: cover;
   background-position: center center;
-  border-radius: 50%;
+  border-radius: 3%;
   display: block;
   cursor:pointer;
   -webkit-filter:  contrast(2);
@@ -774,6 +762,8 @@ canvas{
   left: 0;
   bottom: 0;
   right: 0;
+  object-fit: cover;
+  object-position: 1% center;
 
 }
 
@@ -960,20 +950,21 @@ p {
 }
 
 .oppenned .sub-menu {
+  border:solid red;
   opacity: 0.8;
   height: 30rem;;
   width: 35rem;
 }
 
 /* 開啟後的背景圓框大小 */
-.oppenned span:nth-child(2) {
+/* .oppenned span:nth-child(2) {
   height: 31rem;
   width: 36rem;
   right: -160px;
   top: -160px;
   border-radius: 50%;
   background-color: rgba(38, 84, 133, 0.54);
-}
+} */
  
 
   /* banner */
@@ -1097,7 +1088,7 @@ p {
   height: 100%;
   background-size: cover;
   background-position: center center;
-  border-radius: 50%;
+  border-radius: 3%;
   display: block;
   cursor:pointer;
   -webkit-filter:  contrast(2);
@@ -1487,6 +1478,7 @@ p{
 
 .quote-content-title{
   font-size: 2.7rem;
+  line-height: 2.8rem;
 }
 
 .quote-content-paragraph{
@@ -1567,6 +1559,7 @@ p{
 
 .quote-content-title{
   font-size: 3.4rem;
+  line-height: 3.5rem;
 }
 
 .quote-content-paragraph{
