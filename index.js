@@ -14,6 +14,27 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('#nav-icon1').click(function () {
+    $(this).toggleClass('open');
+
+  });
+
+  $('.sub-btn').click(function () {
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+  });
+
+});
+
+$(document).ready(function () {
+  $(".hamburger").click(function () {
+    $(this).toggleClass("is-active");
+    $('.menu').toggleClass('active');
+    $('.blur-mask').toggleClass('active');
+  });
+});
+
 
 // ParticlesJS Config.
 particlesJS("particles-js", {
