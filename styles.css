@@ -208,6 +208,7 @@ header {
 }
 
 .nav-container{
+
 width:100%;
 height: 10rem;
 padding:2rem;
@@ -234,12 +235,11 @@ position:relative;
 }
 
 .navbar-brand {
-
+  
   display: block;
   position:relative;
 }
 .header-img {
-
   width:10rem;
   height:auto;
   padding:0;
@@ -482,33 +482,6 @@ header{
 }
 
 
-
-/* option-2 */
-/* .static-background {
-  background-size: 100% auto;
-  background-position: bottom 70px ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./assets/img/index/trial-2.jpg");
-} */
-
-/* option-3 */
-/* .static-background {
-  background-size: 100% auto;
-  background-position: top ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./assets/img/index/trial-3.jpg");
-} */
-
-/* option-4 */
-/* .static-background {
-  background-size: 100% auto;
-  background-position: bottom ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./assets/img/index/trial-4.jpg");
-} */
 
 /* option5 */
 .static-background {
