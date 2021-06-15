@@ -181,7 +181,7 @@ a {
 
 
 
-.container {
+.custom-container {
   width: 100%;
   height:auto;
   margin: 0 auto 0 auto;
@@ -198,17 +198,24 @@ a {
 }
 
 /*Main Header*/
-header {
+/* header {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction:column;
   z-index: 9999;
 
+} */
+
+header{
+  position:absolute;
+  width:100%;
+  border:solid red;
+
 }
 
 .nav-container{
-
+border:solid red;
 width:100%;
 height: 10rem;
 padding:2rem;
@@ -421,28 +428,22 @@ display:none;
 
 
 
-
-
-header{
-  background-size: 100% 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/assets/img/index/Globe_2.jpg");
-
-}
-
-
 /* banner */
 
 .banner-wrapper {
-
   width: 100%;
-  height:100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
   box-sizing: border-box;
-  padding:3rem;
+  /* padding:3rem; */
+}
+
+.banner-wrapper {
+    background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/img/index/Globe_2.jpg");
 }
 
 
@@ -828,14 +829,13 @@ width: 100%;
   /* banner */
   .banner-wrapper {
     width:100%;
-
     align-items: center;
     padding-left: 10%;
-
 
 }
 
   .main-caption {
+      margin-top:5rem;
     align-items: start;
     width: 100%;
     position: relative;

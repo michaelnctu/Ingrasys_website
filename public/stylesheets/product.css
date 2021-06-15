@@ -1,0 +1,397 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* nav */
+nav{
+  height:6rem;
+}
+
+
+.nav-wrapper{
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;;
+
+}
+
+nav ul {
+  height:100%;
+  width:60%;
+  display:grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap:0;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+
+nav ul li {
+  height: 100%;
+  width:100%;
+}
+
+nav ul li a {
+  font-size:2rem;
+  height:100%;
+    width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+section {
+  border:solid pink;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+   background-image: url("/assets/img/background/productsMain.jpg");
+}
+
+
+
+
+i{
+    background:transparent;
+}
+
+h,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 0.9;
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+p {
+  margin: 0;
+  font-size: 1.5rem;
+  color:white;
+}
+
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color:white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dots {
+  font-size:50px;
+}
+
+
+.link-top {
+  width: 100%;
+  height: 1px;
+  border-top: solid #d8baac 1px;
+}
+
+
+
+.custom-container {
+  height:auto;
+  margin: 0 auto 0 auto;
+  overflow:hidden;
+  border:solid blue;
+}
+
+.product-container{
+  margin-top:10rem;
+}
+
+/* product-wrapper  */
+
+
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+
+    padding: 2rem 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.product-detail h1{
+    text-transform: capitalize;
+    font-size:2.5rem;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(shoes_images/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.processor > img {
+  margin-left:0;
+  width:25%;
+}
+
+
+
+
+/* application */
+
+.app-container{
+
+  width:80%;
+  margin-left:10%;
+  padding:5%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 6rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.app-title{
+  margin:5rem;
+
+  text-align:center;
+}
+
+.item-img {
+  width:60%;
+  margin:auto;
+  /* padding:30%;; */
+}
+
+.item-title {
+
+  font-size:2rem;
+}
+
+
+/* point-container */
+
+
+
+.point-container{
+  padding:5rem 0 5rem;
+  width:90%;
+  margin-left:5%;
+}
+
+.point-item{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.point-description{
+  margin-top:2rem;
+}
+
+.certif-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+
+  width:80%;
+  margin-left:10%;
+  text-align:center;
+  margin-bottom:5rem
+}
+
+
+
+
+.certif-title{
+  margin:5rem;
+
+  text-align:center;
+}
+
+.certif-item{
+
+  max-width:100px;
+  margin-left:2rem;
+}
+
+@media screen and (min-width: 992px){
+
+    .product-container{
+        border:solid green;
+        padding:5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.product{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+
+
+    .product-imgs{
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+
+
+
+
+/* banner */
+
+.banner-wrapper {
+  border:solid blue;
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding:3rem;
+}
+
+
+
+.main-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.line {
+  width: 60px;
+  height: 6px;
+  background: #F58522;
+  margin-top: 2rem;
+}
+
+
+.caption-description {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+
+.banner-footer {
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.point-container{
+  width:80%;
+  margin-left:10%;
+}
+
+
+
+.point-container{
+  width:80%;
+  margin-left:10%;
+}
+
+.point-item{
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:5%;
+  justify-items: center;
+  align-items: center;
+}
+
+.point-description{
+  margin-top:2rem;
+}
+
+.certif-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+
+  width:80%;
+  margin-left:10%;
+  text-align:center;
+  margin-bottom:5rem
+}
+
+
