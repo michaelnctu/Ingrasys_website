@@ -74,38 +74,231 @@
   </div>
 
 
+  {{!-- display contenr --}}
   <div class="custom-container">
 
-    <nav>
-      <div class="nav-wrapper">
+    {{!-- mobile --}}
 
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-          <i class="material-icons">Overview
-          </i>
-        </a>
+    <select class="select-bar" name="questions" id="faq-questions">
+      <option value="1" selected>Overview</option>
+      <option value="2">Specification</option>
+      <option value="3">Downloads</option>
+    </select>
 
-        <ul class="hide-on-med-and-down">
-          <li class="active"><a href="sass.html">Overview</a></li>
-          <li><a href="#Spec">Spec</a></li>
-          <li><a href="#Download">Download</a></li>
+    {{!-- web --}}
 
-        </ul>
-      </div>
-    </nav>
+    <ul class="nav nav-pills " id="pills-tab" role="tablist">
+      <input type="hidden" id="selected_menu_item" value="=$selectedMenuId">
 
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">Javascript</a></li>
-      <li><a href="mobile.html">Mobile</a></li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link dropdown-item active" id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+          aria-selected="true">Home</button>
+      </li>
 
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+      </li>
 
     </ul>
+
+    {{!-- content --}}
+
+    <div class="tab-content" id="pills-tabContent">
+
+      <div class="acc tab-pane fade show answer answer-1 active" id="pills-home" role="tabpanel"
+        aria-labelledby="pills-home-tab">
+
+        <div class="custom-container">
+
+          <div class="app-title">
+            <h1>Application</h1>
+          </div>
+
+
+          <div class="app-container">
+            <div class="app-item">
+              <img class="item-img" src="./assets/img/icons/data-center.png" alt="">
+              <br>
+              <p class="item-title">Hyper-converged Storage</p>
+            </div>
+
+            <div class="app-item">
+              <img class="item-img" src="./assets/img/icons/data-center.png" alt="">
+              <br>
+              <p class="item-title">Hyper-converged Storage</p>
+            </div>
+
+            <div class="app-item">
+              <img class="item-img" src="./assets/img/icons/data-center.png" alt="">
+              <br>
+              <p class="item-title">Hyper-converged Storage</p>
+            </div>
+            <div class="app-item">
+              <img class="item-img" src="./assets/img/icons/data-center.png" alt="">
+              <br>
+              <p class="item-title">Hyper-converged Storage</p>
+            </div>
+            <div class="app-item">
+              <img class="item-img" src="./assets/img/icons/data-center.png" alt="">
+              <br>
+              <p class="item-title">Hyper-converged Storage</p>
+            </div>
+            <div class="app-item">
+              <img class="item-img" src="./assets/img/icons/data-center.png" alt="">
+              <br>
+              <p class="item-title">Hyper-converged Storage</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="custom-container">
+          <div class="point-container">
+            <div class="point-item">
+              <div class="point-img">
+                <img src="/assets/img/temp/hpc.jpg" alt="應用">
+              </div>
+
+              <div class="point-content">
+                <h class="point-title">
+                  High-density Computing in a Compact Design
+                </h>
+
+
+                <p class="point-description">
+                  The standard-compliant OCP 3.0 slot enables installation of a NIC card to provide hign bandwidth and
+                  ultra-low latency
+                  for data intensive applications, bringing the server networking to the next level
+
+
+                </p>
+              </div>
+            </div>
+
+            <div class="point-item">
+              <div class="point-img">
+                <img src="/assets/img/temp/hpc.jpg" alt="應用">
+              </div>
+
+              <div class="point-content">
+                <h class="point-title">
+                  High-density Computing in a Compact Design
+                </h>
+
+
+                <p class="point-description">
+                  The standard-compliant OCP 3.0 slot enables installation of a NIC card to provide hign bandwidth and
+                  ultra-low latency
+                  for data intensive applications, bringing the server networking to the next level
+
+
+                </p>
+              </div>
+            </div>
+            <div class="point-item">
+              <div class="point-img">
+                <img src="/assets/img/temp/hpc.jpg" alt="應用">
+              </div>
+
+              <div class="point-content">
+                <h class="point-title">
+                  High-density Computing in a Compact Design
+                </h>
+
+
+                <p class="point-description">
+                  The standard-compliant OCP 3.0 slot enables installation of a NIC card to provide hign bandwidth and
+                  ultra-low latency
+                  for data intensive applications, bringing the server networking to the next level
+
+
+                </p>
+              </div>
+            </div>
+            <div class="point-item">
+              <div class="point-img">
+                <img src="/assets/img/temp/hpc.jpg" alt="應用">
+              </div>
+
+              <div class="point-content">
+                <h class="point-title">
+                  High-density Computing in a Compact Design
+                </h>
+
+
+                <p class="point-description">
+                  The standard-compliant OCP 3.0 slot enables installation of a NIC card to provide hign bandwidth and
+                  ultra-low latency
+                  for data intensive applications, bringing the server networking to the next level
+
+
+                </p>
+              </div>
+            </div>
+            <br>
+
+          </div>
+        </div>
+
+        <div class="custom-container">
+          <div class="certif-title">
+            <h1>Certification</h1>
+          </div>
+
+
+          <div class="certif-container">
+            <div class="certif-item">
+              <img id="item-img" src="./assets/img/icons/80_Plus_Standard.png" alt="">
+            </div>
+            <div class="certif-item">
+              <img id="item-img" src="./assets/img/icons/80_Plus_Standard.png" alt="">
+            </div>
+            <div class="certif-item">
+              <img id="item-img" src="./assets/img/icons/80_Plus_Standard.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="tab-pane fade answer answer-2" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="custom-container">
+          Specccccccccc
+        </div>
+      </div>
+
+      <div class="tab-pane fade answer answer-3" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="custom-container">
+          download
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 
   </div>
 
-  <div class="custom-container">
+
+
+  </div>
+
+  </div>
+
+  {{!-- <div class="custom-container">
 
     <div class="app-title">
       <h1>Application</h1>
@@ -254,6 +447,6 @@
         <img id="item-img" src="./assets/img/icons/80_Plus_Standard.png" alt="">
       </div>
     </div>
-  </div>
+  </div> --}}
 </section>
 <br>

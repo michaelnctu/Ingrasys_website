@@ -40,6 +40,20 @@ document.addEventListener('DOMContentLoaded', function () {
   var instances = M.Dropdown.init(elems, options);
 });
 
+
 // Or with jQuery
 
-$('.dropdown-trigger').dropdown();
+$(".dropdown-menu li a").click(function () {
+
+  $('.answer').css({ display: 'none' });
+  $('.acc' + question).css({ display: 'block' })
+
+
+});
+
+
+$('#faq-questions').change(function () {
+  var question = $(this).val();
+  $('.answer').css({ display: 'none' });
+  $('.answer-' + question).css({ display: 'block' });
+});

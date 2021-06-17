@@ -62,8 +62,14 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration:none!important;
 }
+
+a:hover{
+  color:unset;
+  opacity:0.8;
+}
+
 
 .slick-prev {
     z-index: 9999;
@@ -211,7 +217,7 @@ header{
   position:absolute;
   width:100%;
   border:solid red;
-
+  padding:0;
 }
 
 .nav-container{
