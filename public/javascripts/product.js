@@ -48,7 +48,6 @@ $(".dropdown-menu li a").click(function () {
   $('.answer').css({ display: 'none' });
   $('.acc' + question).css({ display: 'block' })
 
-
 });
 
 
