@@ -419,18 +419,6 @@ display:none;
 
 
 
-.nav {
-  position: absolute;
-  top: 100%;
-  background: #ffffff;
-  width: 100%;
-  text-align: center;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 0.3s ease-out;
-}
-
-
 
 
 
