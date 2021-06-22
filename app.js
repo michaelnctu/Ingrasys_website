@@ -18,13 +18,15 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/products', (req, res) => {
+  res.render('products', { productsCSS: true })
+})
+
 app.get('/product', (req, res) => {
   res.render('product', { productCSS: true })
 })
 
-app.get('/products', (req, res) => {
-  res.send('My favorite food is ice cream')
-})
+
 
 // Listen the server when it started
 app.listen(port, () => {

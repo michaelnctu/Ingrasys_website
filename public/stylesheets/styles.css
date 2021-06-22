@@ -52,15 +52,6 @@ p {
 }
 
 
-
-
-ul,
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration:none!important;
 }
@@ -216,12 +207,10 @@ a:hover{
 header{
   position:absolute;
   width:100%;
-
   padding:0;
 }
 
 .nav-container{
-
 width:100%;
 height: 10rem;
 padding:2rem;
@@ -230,6 +219,7 @@ flex-direction:row;
 justify-content:space-between;
 align-items:center;
 position:relative;
+z-index:999 
 } 
 
 .blur-mask.active{
