@@ -221,6 +221,7 @@ align-items:center;
 position:relative;
 z-index:1000;
 border:solid red;
+overflow:visible;
 } 
 
 .blur-mask.active{
