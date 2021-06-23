@@ -233,7 +233,6 @@ z-index:999
     backdrop-filter:blur(15px);
     -webkit-backdrop-filter:blur(15px);
     -moz-backdrop-filter:blur(15px);
-    z-index:5 ;
     border:solid green;
   
 }
@@ -277,11 +276,12 @@ display:none;
 
 .side-bar > .menu.active{
   display:block;
-  z-index:9999
+  
 }
 .side-bar .menu .item{
  position: relative;
  cursor: pointer;
+ z-index:9999
 }
 .side-bar .menu .item a{
  color: #fff;
