@@ -80,15 +80,6 @@
 }  
 
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.under-header{
-  margin-top:10rem;
-}
 
 .title {
   color:#F58522
@@ -212,9 +203,8 @@ span{
 
 
 .custom-container {
-  height:auto;
-  margin: 0 ;
-  overflow:hidden;
+  border:solid red;
+  overflow: visible;
 
 }
 
