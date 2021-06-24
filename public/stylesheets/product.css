@@ -25,7 +25,6 @@
       height:100%;
       padding: .5rem 1rem;
       color:white;
-      border-radius: 0;
     }
 
     .custom-btn.active {
@@ -426,7 +425,7 @@ padding-left:2rem;
 
 @media screen and (max-width: 1024px) {
 
-  .product-detail h1{
+.product-detail h1{
     font-size: 2.5rem;
 }
   .product-detail p{
@@ -442,6 +441,14 @@ padding-left:2rem;
 
 .processor p {
   font-size: 1.3rem;
+}
+
+.point-title {
+  font-size: 1.5rem;
+}
+
+.point-description {
+    margin-top: 1.3rem;
 }
 
 }
@@ -604,9 +611,7 @@ tr {
   margin-left:5%;
 }
 
-.point-title {
-  font-size: 1.5rem;
-}
+
 .point-item{
   width:100%;
   display:grid;
@@ -618,7 +623,6 @@ tr {
 
 
 .point-description{
-  font-size:1.2rem;
   margin-top:2rem;
 }
 
