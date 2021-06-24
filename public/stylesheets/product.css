@@ -80,6 +80,10 @@
 }  
 
 
+.custom-container {
+  overflow: visible;
+}
+
 
 .title {
   color:#F58522
