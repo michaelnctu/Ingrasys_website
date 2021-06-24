@@ -26,6 +26,10 @@ app.get('/product', (req, res) => {
   res.render('product', { productCSS: true })
 })
 
+app.get('/csr', (req, res) => {
+  res.render('csr', { csrCSS: true })
+})
+
 
 
 // Listen the server when it started

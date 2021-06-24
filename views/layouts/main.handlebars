@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="/stylesheets/styles.css">
   <link rel="stylesheet" href="/stylesheets/products.css">
 
-
+  {{#if csrCSS}}
+  <link rel="stylesheet" href="/stylesheets/csr.css">
+  {{/if}}
   {{#if productCSS}}
   <link rel="stylesheet" href="/stylesheets/product.css">
   {{/if}}
@@ -168,6 +170,12 @@
 
 
   <script type="text/javascript" src="/javascripts/index.js"></script>
+
+  {{#if csrCSS}}
+
+  <script type="text/javascript" src="/javascripts/csr.js"></script>
+
+  {{/if}}
 
 
   {{#if productCSS}}
