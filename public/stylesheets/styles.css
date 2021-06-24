@@ -181,8 +181,8 @@ a:hover{
 .custom-container {
   width: 100%;
   height:auto;
-  margin:0 auto 0;
-  overflow:visible;
+  margin: 0 auto 0 auto;
+  overflow:hidden;
 }
 
 
