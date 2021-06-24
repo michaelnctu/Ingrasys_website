@@ -6,8 +6,6 @@ body {
   padding:0;
 }
 
-
-
 h5, li ,hr{
   color:white;
 }
@@ -40,7 +38,7 @@ hr {
 .under-header-products{
   position:absolute;
   margin-top:10rem;
-  z-index:1000
+  z-index:500
 }
 
 
@@ -73,13 +71,12 @@ hr {
   padding:1rem;
   background:rgba(30, 32, 34, 0.3);
   text-align:left;
-  width:30%;
+  width:40%;
 }
 
 .slider-caption h {
-  color:#F58522;
-  line-height:150%;
-  font-size: 4rem ;
+color:#F58522;
+font-size: 3.8rem ;
 
 }
 
@@ -188,10 +185,10 @@ object-fit:cover;
 }
 
 .content-container{
-  width:80%;
-  margin-left:10%;
+  width:85%;
+  margin-left:7.5%; 
   margin-top:3rem;
-  padding:15rem 3rem 10rem; 
+  padding:10rem 3rem 10rem; 
 }
 
 
@@ -199,29 +196,52 @@ object-fit:cover;
   
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 5%;
   justify-items: center;
   align-items: center;
 
 }
 
+@media screen and (max-width: 1280px) {
 
-@media screen and (max-width: 1024px) { 
-
-  .slider-caption h {
-  line-height:150%;
+    .slider-caption h {
   font-size: 2.5rem ;
 
 }
 
 .slider-caption p {
-  font-size: 1.125srem ;
+  font-size: 1.125rem ;
 }
 
 }
 
-@media screen and (max-width: 769px) { 
 
+@media screen and (max-width: 1024px) {
+
+  .slider-caption h {
+  font-size: 2rem ;
+
+}
+
+.slider-caption p {
+  font-size: 0.9rem ;
+}
+
+.content-container{
+  padding:8rem 0rem 10rem; 
+}
+
+.card-text{
+  font-size:1.3rem;
+}
+
+}
+
+@media screen and (max-width: 768px) { 
+
+  .content-container {
+    margin-bottom:3rem;
+  }
 
   .carousel-mobile{
 
@@ -234,6 +254,7 @@ object-fit:cover;
   left:0;
   width:100%;
   text-align:left;
+  overflow:visible;
 }
 
 .carousel-indicators{
@@ -245,6 +266,17 @@ object-fit:cover;
       padding: 5rem 3rem 10rem;
 }
 
+
+
+}
+
+@media screen and (max-width: 400px) { 
+
+
+.content-container {
+  width:100%;
+  margin-left:0; 
+}
 
 
 

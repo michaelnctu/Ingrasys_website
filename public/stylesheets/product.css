@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional");
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
-
+/* nav-tabs */
 @media (min-width: 768px) {
+
     .responsive-tabs .dropdown-arrow {
         display: none; 
     } 
@@ -24,6 +25,7 @@
       height:100%;
       padding: .5rem 1rem;
       color:white;
+      border-radius: 0;
     }
 
     .custom-btn.active {
@@ -212,8 +214,9 @@ span{
 
 .custom-container {
   height:auto;
-  margin: 0 auto 0 auto;
+  margin: 0 ;
   overflow:hidden;
+
 }
 
 .under-header{
@@ -421,6 +424,27 @@ padding-left:2rem;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
+@media screen and (max-width: 1024px) {
+
+  .product-detail h1{
+    font-size: 2.5rem;
+}
+  .product-detail p{
+    font-size: 0.9rem;
+}
+.product-detail ul{
+
+    font-size: 1.7rem;
+}
+.product-detail ul li{
+      font-size: 1rem;
+}
+
+.processor p {
+  font-size: 1.3rem;
+}
+
+}
 
 @media screen and (min-width: 768px){
 
@@ -429,6 +453,10 @@ padding-left:2rem;
 h1{
     font-size:3rem;
 }
+
+
+
+
 
 .product-container{
 
@@ -576,6 +604,9 @@ tr {
   margin-left:5%;
 }
 
+.point-title {
+  font-size: 1.5rem;
+}
 .point-item{
   width:100%;
   display:grid;
@@ -587,6 +618,7 @@ tr {
 
 
 .point-description{
+  font-size:1.2rem;
   margin-top:2rem;
 }
 
