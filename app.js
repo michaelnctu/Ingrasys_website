@@ -27,7 +27,7 @@ app.get('/product', (req, res) => {
 })
 
 app.get('/csr', (req, res) => {
-  res.render('csr', { csrCSS: true })
+  res.render('CSR', { csrCSS: true })
 })
 
 
