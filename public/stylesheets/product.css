@@ -18,19 +18,20 @@
     .responsive-tabs {
         position: relative;
         border:none; 
-      
-
+    
     }
     .custom-btn{
       height:100%;
       padding: .5rem 1rem;
       color:white;
+      border-radius: 0;
     }
 
     .custom-btn.active {
       color:white !important;
       background:#00285E!important;
       border:none !important;
+            border-radius: 0;
     }
 
 
@@ -130,7 +131,7 @@ nav ul {
   background-size: 100% 100%;
   background-size: cover;
   background-position: center;
-   background-image: url("/assets/img/backgrounds/product-upper4.jpg");
+   background-image: url("/assets/img/temp/silk.jpg");
 }
 
 
@@ -371,8 +372,7 @@ padding-left:2rem;
 
 
 .certif-title{
-  margin:5rem;
-
+  margin-bottom:5rem;
   text-align:center;
 }
 
@@ -492,7 +492,7 @@ h1{
   flex-direction:row;
   align-items:center;
   justify-content: center;
-  background: linear-gradient(180deg, rgba(35, 28, 28, 0.651) 8.33%, rgba(46, 39, 39, 0.61771) 17.19%, rgba(255, 255, 255, 0) 100%), #000000;
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.651) 7.81%, rgba(46, 39, 39, 0.61771) 25.96%, rgba(99, 93, 93, 0) 91.67%), #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 

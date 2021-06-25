@@ -10,9 +10,9 @@
 }
 
 .csr-banner img {
-  
-  object-fit:contain;
-  height:100%;
+  object-position: center;
+  max-width:100%;
+  min-height:80%;
 
 }
 

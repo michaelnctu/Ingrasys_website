@@ -428,7 +428,7 @@ display:none;
 }
 
 .banner-wrapper {
-    background-size: 100% 100%;
+  background-size: 100% 100%;
   background-size: cover;
   background-position: center;
   background-image: url("/assets/img/index/Globe_2.jpg");
@@ -693,7 +693,7 @@ canvas{
 .quote-content {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items:center;
 
 }
 
@@ -703,7 +703,7 @@ canvas{
 
 .quote-content-title{
   margin-bottom: 2rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -725,7 +725,6 @@ canvas{
 
 /* footer */
   .footer-wrapper {
-
     display: flex;
     flex-direction:column;
     align-items:center;
@@ -743,18 +742,19 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .footer-img {
+
     display:block;
-    width: 75%;
+    width: 50%;
     height:auto;
 /* 圖片置中 */
     margin:auto; 
-
   }
 
   .office-address {
+
     color:white;
     margin-top:2rem;
-    padding-left: 10%;
+    /* padding: 10%; */
     white-space: nowrap;
     display:flex;
     align-items:flex-start;
@@ -763,6 +763,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
    .office-address > span {
+     margin-left:25%;
      position:relative;
      text-align:left;
      line-height:125%;
@@ -964,13 +965,17 @@ width: 100%;
     display:unset;
     visibility: hidden; 
     position: absolute;
+    padding: 1rem;;
     width:100%;
-    top:0;
+    bottom:50%;
     transform: translate(0%, 50%);
     color: white;
     text-align:left;
     font-size: 1rem; 
     line-height: 200%;
+    text-align: justify-all;
+    background: rgba(151, 140, 140, 0.55);
+    border-radius: 10px;
     
 
   }
@@ -997,6 +1002,7 @@ width: 100%;
 
 .about-content {
   width:100%;
+  text-align: justify-all;
   position:relative;
   margin-top:5rem;
   margin-bottom:5rem;
@@ -1240,7 +1246,8 @@ width: 100%;
 
   
   .focus-description {
- 
+
+    
     font-size: 1.5rem; 
     line-height: 100%;
   

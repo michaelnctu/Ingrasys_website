@@ -180,7 +180,7 @@ object-fit:cover;
   width:100%;
   background-size: 100% 100%;
   background-size: cover;
-  background-position: 0 -250px;
+  background-position: -50px -250px;
   background-image: url("/assets/img/backgrounds/productsMain.jpg");
 }
 
@@ -238,10 +238,13 @@ object-fit:cover;
 }
 
 @media screen and (max-width: 768px) { 
+   /* just for mobile */
+  .nav-container {
+ 
+    opacity:0.8;
 
-  .content-container {
-    margin-bottom:3rem;
   }
+
 
   .carousel-mobile{
 
@@ -263,7 +266,11 @@ object-fit:cover;
 
 
 .content-container {
-      padding: 5rem 3rem 10rem;
+      padding: 3rem 3rem 10rem;
+}
+
+.slider-bottom {
+  background-position: -500px -250px;
 }
 
 
@@ -272,12 +279,14 @@ object-fit:cover;
 
 @media screen and (max-width: 400px) { 
 
-
 .content-container {
   width:100%;
   margin-left:0; 
 }
 
+.slider-bottom {
+  background-position: 70%;
+}
 
 
 }
