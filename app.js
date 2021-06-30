@@ -30,6 +30,11 @@ app.get('/csr', (req, res) => {
   res.render('CSR', { csrCSS: true })
 })
 
+app.get('/about', (req, res) => {
+  res.render('about', { aboutCSS: true })
+})
+
+
 
 
 // Listen the server when it started

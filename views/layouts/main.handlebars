@@ -19,13 +19,19 @@
   {{!-- 動畫 --}}
 
   <link rel="stylesheet" href="/stylesheets/styles.css">
-  <link rel="stylesheet" href="/stylesheets/products.css">
 
+  {{#if productsCSS}}
+  <link rel="stylesheet" href="/stylesheets/products.css">
+  {{/if}}
   {{#if csrCSS}}
   <link rel="stylesheet" href="/stylesheets/csr.css">
   {{/if}}
   {{#if productCSS}}
   <link rel="stylesheet" href="/stylesheets/product.css">
+  {{/if}}
+
+  {{#if aboutCSS}}
+  <link rel="stylesheet" href="/stylesheets/about.css">
   {{/if}}
 
 
@@ -62,7 +68,7 @@
 
           <div class="menu">
             <div class="item">
-              <a href="#">
+              <a href="/about">
                 About Ingrasys</a>
             </div>
             <div class="item">
@@ -147,6 +153,8 @@
   <!-- jquery -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     crossorigin="anonymous"></script>
@@ -185,7 +193,11 @@
 
   {{/if}}
 
+
+  {{#if productsCSS}}
   <script type="text/javascript" src="/javascripts/products.js"></script>
+
+  {{/if}}
 
 
 

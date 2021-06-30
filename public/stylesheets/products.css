@@ -204,7 +204,7 @@ object-fit:cover;
 
 @media screen and (max-width: 1280px) {
 
-    .slider-caption h {
+  .slider-caption h {
   font-size: 2.5rem ;
 
 }
