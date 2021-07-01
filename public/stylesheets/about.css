@@ -63,10 +63,11 @@
 .card {
   background: transparent;
   /* box-shadow: 0 0 20px #1167d8 ; */
-  min-height: 400px;
+  height: 400px;
   display:grid;
   grid-template-rows: 75% 20%;
-  border:none
+  border:none;
+  border:solid red;
 }
 
 
