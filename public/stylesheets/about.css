@@ -67,7 +67,7 @@
   display:grid;
   grid-template-rows: 75% 20%;
   border:none;
-  border:solid red;
+
 }
 
 
@@ -78,6 +78,10 @@
 
 .card-body {
   text-align: center;
+}
+
+.card-body  .card-title{
+  color: #F58522;
 }
 
 .card-text{

@@ -1,3 +1,7 @@
+ul,li {
+  color:white;
+}
+
 .under-header{
   position:absolute;
   top:10rem;
