@@ -28,6 +28,8 @@ body {
 }
 
 
+
+
 i{
     background:transparent;
 }
@@ -182,7 +184,8 @@ a:hover{
   width: 100%;
   height:auto;
   margin: 0 auto 0 auto;
-  overflow:visible;
+  overflow-y:visible;
+  overflow-x:hidden;
 }
 
 
@@ -498,6 +501,7 @@ canvas{
 .particles-reference {
   position: relative;
   width:100%;
+    overflow:hidden;
 }
 
 #particles-js {
@@ -1015,8 +1019,11 @@ width: 100%;
 }
 
 .about-img {
+
   all:unset;
-  width:70%;
+  width:50%;
+
+    margin-left:3%;
 }
 
 .aboutBG-img {
@@ -1028,14 +1035,12 @@ width: 100%;
 
 .about-description{
   all:unset;
-  position:relative;
-  right:10%;;
-  width: 50%;
-
+  margin-right:3%;
+  width:60%;
   display: flex;
   flex-direction:column;
   justify-content:center;      
-  align-items: start;   
+  align-items: start;  
 
 }
 
@@ -1208,8 +1213,8 @@ h1, h{
 }
 
 p{
-  font-size:2rem;
-  line-height:110%;
+  font-size:1.3rem;
+  line-height:140%;
 }
 
 
@@ -1310,8 +1315,8 @@ h1, h{
 }
 
 p{
-  font-size:2.5rem;
-  line-height:110%;
+  font-size:1.6rem;
+  line-height:140%;
 }
 
 /* siderbar */
@@ -1356,7 +1361,7 @@ width: 100%;
 
 
 .action {
-  font-size: 2rem
+  font-size: 1.5rem
 }
 
 .office-location {
@@ -1392,8 +1397,8 @@ h1, h{
 }
 
 p{
-  font-size:3.2rem;
-  line-height:110%;
+  font-size:2rem;
+  line-height:140%;
 }
 
 
@@ -1450,7 +1455,7 @@ margin-left:30%;
 
 
 .action {
-  font-size: 2.5rem
+  font-size: 2rem
 }
 
 .office-location {

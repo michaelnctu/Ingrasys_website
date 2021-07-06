@@ -393,8 +393,7 @@ padding-left:2rem;
 
 /* spec */
 .table {
-  background:rgba(151, 140, 140, 0.2);
-  border-radius: 10px ;
+  background: rgba(140, 136, 136, 0.2);
   margin-top:3rem;
   width:100%;
   color:white;
@@ -505,9 +504,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .nav-item:hover {
 cursor:pointer
 }
-
-
-
 .custom-btn {
   display:block;
   color:white;
@@ -582,9 +578,9 @@ tr {
 .table {
   background:rgba(151, 140, 140, 0.2);
   border-radius: 10px ;
-  width:75%;
-  margin:5rem 12.5% 5rem;
-  padding:5rem;
+  width:80%;
+  margin:5rem 10% 5rem;
+  padding:4rem;
 }
 
 

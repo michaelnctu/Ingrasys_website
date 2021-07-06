@@ -34,6 +34,11 @@ app.get('/about', (req, res) => {
   res.render('about', { aboutCSS: true })
 })
 
+app.get('/cooling', (req, res) => {
+  res.render('cooling', { coolCSS: true })
+})
+
+
 
 
 

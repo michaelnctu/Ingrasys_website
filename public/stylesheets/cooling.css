@@ -1,0 +1,272 @@
+
+p {
+  font-size:1em;
+}
+
+
+hr{
+      background-color: #e7eaf3 !important;
+          opacity: 1!important;
+}
+
+
+.under-header{
+  position:absolute;
+  top:10rem;
+
+}
+.breadcrumb{
+  padding-left:2.5rem;
+  margin:0;
+  align-items: center;
+  justify-content:flex-start;
+}
+
+.breadcrumb-item a{
+  color:white;
+}
+
+.breadcrumb-item.active{
+  color:#F58522;
+
+}
+
+
+
+.cooling-banner{
+  width:70%; 
+  margin-left:30%;
+  height:60vh;
+  overflow:hidden;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("/assets/img/about/pcb.jpg");
+
+}
+
+.cooling-text {
+  position:absolute;
+  padding-left:2.5rem;
+  width:30%;
+  top:55vh;
+  transform: translate(0, -100%);
+  z-index:1
+}
+
+
+.custom-container {
+ /* margin-bottom:4em; */
+ width:100%;
+
+}
+.sub-container {
+  padding: 8rem 0;
+
+}
+
+/* nav-tabs */
+
+.select-bar{
+  display:none
+}
+
+.nav {
+  transform: unset;
+}
+
+.nav{
+  all:unset;
+  position:relative;
+  height:5rem;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.651) 7.81%, rgba(46, 39, 39, 0.61771) 25.96%, rgba(99, 93, 93, 0) 91.67%), #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-item {
+  text-align:center;
+  font-size:1.5rem;
+  height:100%;
+  width:20%;
+}
+.nav-item:hover {
+cursor:pointer
+}
+.custom-btn {
+  display:block;
+  color:white;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.custom-btn.active {
+    background-color:#00285E!important;
+  color:white!important;
+  border:none;
+}
+
+.custom-btn:hover{
+  border:none;
+  color: #F58522;
+}
+
+.tab-content{
+width:100%;
+overflow-x: hidden;
+}
+
+/* nav-tabs */
+@media (min-width: 768px) {
+
+    .responsive-tabs .dropdown-arrow {
+        display: none; 
+    } 
+
+    .open{
+      all:unset;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .responsive-tabs {
+        position: relative;
+        border:none; 
+    
+    }
+    .custom-btn{
+      height:100%;
+      padding: .5rem 1rem;
+      color:white;
+      border-radius: 0;
+    }
+
+    .custom-btn.active {
+      color:white !important;
+      background:#00285E!important;
+      border:none !important;
+            border-radius: 0;
+    }
+
+
+    .responsive-tabs li {
+        width: 100%; 
+        margin: 0 !important; 
+    }
+    .responsive-tabs li > a {
+        display: none; 
+        border: 0 !important; 
+        border-radius: 0 !important;
+    }
+
+  
+
+
+    .responsive-tabs.open li > a, .responsive-tabs li > a.active {
+        display:block;
+
+    }
+
+    .responsive-tabs.open {
+
+      width:100%;
+      border:none;
+    }
+
+
+    .responsive-tabs .dropdown-arrow { 
+        position: absolute;
+        top: 15px;
+        right: 15px; 
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        vertical-align: middle;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: all ease .5s;
+        cursor: pointer; 
+    }
+    .responsive-tabs.open .dropdown-arrow {
+        transform: rotate(-135deg);
+        transition: all ease .5s; 
+    } 
+}  
+
+
+.intro-content .content-text{
+
+  padding:3% 10% ;
+}
+
+.content-text p{
+  font-size:1.5em;
+}
+
+.carousel-item img {
+  width:100%;
+}
+
+
+
+.content-sliders {
+
+padding-left:10%;
+padding-right:10%;
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10%;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  background:transparent;
+  border:solid white
+}
+
+
+.standard-container{
+padding:0 5%;;
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5%;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.standard-img{
+  width:100%;
+  padding:3em;
+;
+}
+
+.standard-img img{
+  width:100%;
+}
+
+.standard-line {
+  margin-bottom:1.6em;
+}
+
+.standard-title {
+  color:#F58522;
+  font-size:1.6em;
+}
+
+  .standard-detail{
+    font-size:1.2em;
+  }
+
+.fa-shield-check {
+  color:#40A7F9
+}
