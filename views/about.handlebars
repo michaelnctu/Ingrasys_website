@@ -1,6 +1,6 @@
 <section>
 
-  <div class="custom-container">
+  <div class="custom-container margin-box">
 
     <nav class="under-header" aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -16,7 +16,7 @@
 
   </div>
 
-  <div class="custom-container">
+  <div class="custom-container margin-box">
 
     <div class="title-box title-left">
       <h1 class="about-title"> Ingrasys Story</h1>
@@ -28,7 +28,7 @@
       <div class="story-img">
         <img src="/assets/img/about/office-view.jpg"" alt=" office">
       </div>
-      <div class=" story-para">
+      <div class="story-para">
         <p>
           Ingrasys is a global leading cloud infrustructure provider, aimed at leveraging technological
           innovations—Hyperconverged
@@ -39,7 +39,7 @@
 
         <p>
           Building on our expertise in engineering, business and operation, We offer a full spectrum of
-          products,including server, storage, workstaion and advanced cooling solutions.
+          products,including servers, storages, workstaions and advanced cooling solutions.
         </p>
 
         <br>
@@ -58,7 +58,7 @@
     </div>
   </div>
 
-  <div class="custom-container">
+  <div class="custom-container margin-box">
 
     <div class="title-box title-left">
       <h1 class="about-title"> Leadership</h1>
@@ -84,14 +84,7 @@
           </p>
         </div>
       </div>
-      <div class="card">
-        <img src=" /assets/img/about/pcb.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Benjamin Ting</h5>
-          <p class="card-text"> Vice President
-          </p>
-        </div>
-      </div>
+
 
 
 
@@ -123,6 +116,24 @@
 
           <div class="office-container">
 
+
+            {{#each offices}}
+            <div class="card card-location">
+
+              <img src=" /assets/img/about/seattle.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+
+                <h class="city-text">{{this.city}}</h>
+
+                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> {{this.address}}
+                </p>
+                <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
+              </div>
+            </div>
+
+            {{/each}}
+
+
             <div class="card card-location">
 
               <img src=" /assets/img/about/seattle.jpg" class="card-img-top" alt="...">
@@ -137,6 +148,7 @@
                 <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
               </div>
             </div>
+
             <div class="card card-location">
               <img src="/assets/img/about/sj.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -144,7 +156,7 @@
                 <h class="city-text">San Jose, CA</h>
                 <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> 2025 Gateway Pl Suite 190
                   San Jose, CA 95110<br>
-                  <i class="fas fa-phone"></i>+1 408-727-8060
+
                 </p>
                 <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
               </div>

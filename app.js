@@ -12,6 +12,9 @@ app.use('/assets', express.static('assets'))
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
+//models
+const officeList = require('./models/office.json')
+
 
 // routes setting
 app.get('/', (req, res) => {
@@ -31,7 +34,7 @@ app.get('/csr', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-  res.render('about', { aboutCSS: true })
+  res.render('about', { aboutCSS: true, offices: officeList.usa })
 })
 
 app.get('/cooling', (req, res) => {

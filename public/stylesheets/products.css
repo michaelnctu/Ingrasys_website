@@ -28,8 +28,6 @@ hr {
 
 
 .slider-top {
-
-
   position:relative;
   top:0;
 }
@@ -61,23 +59,23 @@ hr {
 
 .slider-container{
   position:relative;
-
 }
 
 .slider-caption {
   position: absolute;
-  bottom:5%;;
+  bottom:8%;
   left:2.5rem;
-  padding:1rem;
+  padding:1rem; 
   background:rgba(30, 32, 34, 0.3);
   text-align:left;
-  width:40%;
+  width:45%;
+
 }
 
-.slider-caption h {
+.slider-caption h{
 color:#F58522;
-font-size: 3.8rem ;
-
+font-size: 3.3rem;
+line-height:150%;
 }
 
 .slider-caption p {
@@ -144,13 +142,14 @@ opacity:0.7;
 
 }
 
-
-
 .carousel-item img{
 width: 100%;
 object-fit:cover;
+object-position: bottom;
 }
 
+
+/* 產品格子 */
 
 .card {
   background-color:transparent;
@@ -170,6 +169,7 @@ object-fit:cover;
 
 .card-text{
   font-size:1em;
+  line-height:1.5em
 } 
 
 /* if new product */
@@ -183,15 +183,10 @@ object-fit:cover;
 }
 
 .text-box{
-  height:160px;
   overflow: hidden;
 }
 
 
-/* .card-body .btn{
-  position:absolute;
-  bottom:2rem;;
-} */
 
 .slider-bottom {
   width:100%;
@@ -201,6 +196,8 @@ object-fit:cover;
   background-image: url("/assets/img/backgrounds/productsMain.jpg");
 }
 
+
+/* 下方產品的container */
 .content-container{
   width:85%;
   margin-left:7.5%; 
@@ -208,21 +205,31 @@ object-fit:cover;
   padding:10rem 3rem 10rem; 
 }
 
-
 .content-container{
   
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- 
   grid-gap: 5%;
   justify-items: center;
   align-items: center;
+  overflow:hidden;
 
 }
 
+@media screen and (max-width: 1440px) {
+
+
+.card-text{
+  font-size:0.8em;
+} 
+
+}
+
+
+
 @media screen and (max-width: 1280px) {
 
-  .slider-caption h {
+.slider-caption h {
   font-size: 2.5rem ;
 
 }
@@ -230,6 +237,10 @@ object-fit:cover;
 .slider-caption p {
   font-size: 1.125rem ;
 }
+
+.card-text{
+  font-size:0.8em;
+} 
 
 }
 
@@ -249,14 +260,18 @@ object-fit:cover;
   padding:8rem 0rem 10rem; 
 }
 
+.card-text{
+  font-size:0.7em;
+} 
+
 
 }
 
 @media screen and (max-width: 768px) { 
-
+/* 
   .text-box {
     height:250px;
-  }
+  } */
    /* just for mobile */
   .nav-container {
  

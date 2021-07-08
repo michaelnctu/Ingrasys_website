@@ -81,15 +81,15 @@
 }  
 
 
+
 .custom-container {
+  
   overflow: visible;
 }
-
 
 .title {
   color:#F58522
 }
-
 
 .breadcrumb{
   padding-left:2.5rem;
@@ -104,7 +104,6 @@
 
 .breadcrumb-item.active{
   color:#F58522;
-
 }
 
 .nav-wrapper{
@@ -113,7 +112,6 @@
   display:flex;
   justify-content:center;
   align-items: center;;
-
 }
 
 nav ul {
@@ -134,17 +132,12 @@ nav ul {
    background-image: url("/assets/img/temp/silk.jpg");
 }
 
-
-
 .bar-bottom {
   background-size: 100% 100%;
   background-size: cover;
   background-position: center;
    background-image: url("/assets/img/backgrounds/productsMain.jpg");
 }
-
-
-
 
 
 
@@ -243,8 +236,8 @@ img{
 .img-item:hover{
     opacity: 0.8;
 }
-.product-content{
 
+.product-content{
     padding: 2rem 1rem;
     display:flex;
     flex-direction: column;
@@ -253,27 +246,27 @@ img{
 
 
 .product-detail p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.3rem;
     opacity: 0.8;
 }
 .product-detail ul{
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
+
 .product-detail ul li{
     margin: 0;
     list-style: none;
     background: url(shoes_images/checked.png) left center no-repeat;
     background-size: 18px;
-    padding-left: 1.7rem;
+    /* padding-left: 1.7rem; */
     margin: 0.4rem 0;
     font-weight: 600;
     opacity: 0.9;
 }
 
 .processor > img {
-  padding:1rem;
   margin-left:0;
   width:25%;
   margin-top:1.5rem;
@@ -295,23 +288,20 @@ padding-left:2rem;
 
 .select-bar >　option{
   color:white
-
 }
-
-
 
 /* application */
 
 .app-container{
-
   width:80%;
   margin-left:10%;
   padding:5%;
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   grid-gap: 6rem;
   justify-items: center;
   align-items: center;
+  /* border:solid red; */
 }
 
 .app-title{
@@ -327,7 +317,7 @@ padding-left:2rem;
 
 .item-title {
   text-align: center;
-  font-size:2rem;
+  font-size:1.5rem;
 }
 
 
@@ -348,6 +338,10 @@ padding-left:2rem;
   justify-items: center;
   align-items: center;
   margin-bottom: 7rem;
+}
+
+.point-title{
+  font-size:2rem;
 }
 
 .graph-right{
@@ -391,14 +385,15 @@ padding-left:2rem;
 }
 
 
+
+
 /* spec */
 .table {
   background: rgba(140, 136, 136, 0.2);
   margin-top:3rem;
-  width:100%;
-  color:white;
+  width:95%;
+  margin-left:2.5%;
 }
-
 
 
 .table>:not(caption)>*>* {
@@ -408,7 +403,16 @@ padding-left:2rem;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
-@media screen and (max-width: 1024px) {
+td, th{
+  color:white;
+  font-size:1rem;
+}
+
+.table th td{
+  font-size:1rem;
+}
+
+/* @media screen and (max-width: 1024px) {
 
 .product-detail h1{
     font-size: 2.5rem;
@@ -436,42 +440,38 @@ padding-left:2rem;
     margin-top: 1.3rem;
 }
 
-}
+} */
 
 @media screen and (min-width: 768px){
 
-
-
 h1{
-    font-size:3rem;
+    font-size:2rem;
 }
-
-
-
-
 
 .product-container{
 
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding:5% 
+        align-items: center;        padding:2%  
     }
 
 .product{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 4rem;
+
     }
 
-
-    .product-imgs{
+ .product-imgs{
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
 
-
+ .product-detail ul{
+    font-size: 1rem;
+}
 
 /* nav-tabs */
 
@@ -501,22 +501,24 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height:100%;
   width:20%;
 }
+
 .nav-item:hover {
 cursor:pointer
 }
+
 .custom-btn {
   display:block;
-  color:white;
+  color:#ffffff;
   width:100%;
   height:100%;
   display:flex;
   align-items: center;
   justify-content: center;
-  
+  font-size:1.5rem;
 }
 
 .custom-btn.active {
-    background-color:#00285E!important;
+  background-color:#00285E!important;
   color:white!important;
   border:none;
 }
@@ -525,9 +527,6 @@ cursor:pointer
   border:none;
   color: #F58522;
 }
-
-
-
 
 /* banner */
 
@@ -541,8 +540,6 @@ cursor:pointer
   padding:3rem;
 }
 
-
-
 .main-caption {
   display: flex;
   flex-direction: column;
@@ -550,17 +547,13 @@ cursor:pointer
   text-align: center;
 }
 
-
 .caption-description {
   margin: 2rem 0;
   font-size: 1.5rem;
   color: white;
 }
 
-
-
 .banner-footer {
-
   width: 100%;
   height: auto;
   display: flex;
@@ -570,34 +563,12 @@ cursor:pointer
 
 }
 
-tr {
-  color:white;
-}
-
-/* spec */
-.table {
-  background:rgba(151, 140, 140, 0.2);
-  border-radius: 10px ;
-  width:80%;
-  margin:5rem 10% 5rem;
-  padding:4rem;
-}
-
-
-
-.table>:not(caption)>*>* {
-    padding: 1.5rem 1rem;
-    background-color: var(--bs-table-bg);
-    border-bottom-width: 1px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
-}
 
 
 .point-container{
   width:90%;
   margin-left:5%;
 }
-
 
 .point-item{
   width:100%;
@@ -608,7 +579,6 @@ tr {
   align-items: center;
 }
 
-
 .point-description{
   margin-top:2rem;
 }
@@ -617,7 +587,6 @@ tr {
   display:flex;
   flex-direction:row;
   justify-content: center;
-
   width:80%;
   margin-left:10%;
   text-align:center;
@@ -626,4 +595,49 @@ tr {
 
 
 
+}
+
+@media screen and (min-width:1024px){
+
+
+
+.product-detail ul li{
+    font-size:1.1rem;
+}
+
+/* spec */
+.table {
+
+  width:90%;
+  margin-left:5%;
+}
+
+}
+
+@media screen and (min-width:1280px){
+
+.product-detail ul li{
+    font-size:1.4rem;
+}
+
+.processor > img{
+  padding:1.5rem;
+}
+
+td, th{
+  color:white;
+  font-size:1.3rem;
+}
+
+
+
+}
+
+@media screen and (min-width:1440px){
+
+  .app-container{
+
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+}
 }

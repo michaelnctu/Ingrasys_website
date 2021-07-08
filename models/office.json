@@ -1,0 +1,16 @@
+{
+  "usa": [
+    {
+      "id": 1,
+      "city": "Seattle, WA",
+      "address": "Bellevue office 14450 NE 29th Pl #120 Bellevue, WA 98007",
+      "map": ""
+    },
+    {
+      "id": 2,
+      "city": "Seattle, WA",
+      "address": "2401 4th Ave, Suite 810 Seattle, WA 98121",
+      "map": ""
+    }
+  ]
+}

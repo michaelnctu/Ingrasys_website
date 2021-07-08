@@ -1,3 +1,14 @@
+section{
+  background-size: 80%;
+  background-position: 50px top ;
+  background-image: url("/assets/img/temp/trial-9.jpg");
+  /* border:solid pink */
+  
+}
+
+ 
+
+
 .under-header{
   position:absolute;
   top:10rem;
@@ -29,12 +40,19 @@
 }
 
 .custom-container {
- margin-bottom:4em;
-
+  padding-bottom: 7rem;
+  
 }
 
 
 /* story */
+
+.story-wrapper{
+  overflow:hidden;
+  padding:5%;
+
+}
+
 .story-img {
   width:100%;
 }
@@ -44,7 +62,8 @@
 }
 
 .story-para p{
-  font-size: 0.9em;
+  font-size: 0.7em;
+  padding-top:1rem;
 }
 
 /* leadership */
@@ -237,6 +256,12 @@
   grid-gap:3%;
   justify-items: center;
   align-items: center;
+}
+
+
+.story-para p{
+  font-size: 0.8em;
+  padding-top:1rem;
 }
 
 .container-boxy {
