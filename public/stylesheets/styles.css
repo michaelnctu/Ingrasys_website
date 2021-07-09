@@ -190,12 +190,13 @@ a:hover{
 
 
 
-.background-image {
+/* .background-image {
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+  border:solid green;
+} */
 
 /*Main Header*/
 /* header {
@@ -421,28 +422,40 @@ display:none;
 
 /* banner */
 
-.banner-wrapper {
-  width: 100%;
+.upper-banner {
   min-height: 100vh;
-  display:flex;
-  align-items:center;
-  box-sizing: border-box;
-  /* padding:3rem; */
-}
-
-.banner-wrapper {
-  background-size: cover;
+    background-size: cover;
   background-position: center;
   background-image: url("/assets/img/index/Globe_2.jpg");
 }
 
+.banner-wrapper {
+  margin-top:10rem;
+  /* width: 100%;
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  box-sizing: border-box;
+  padding:3rem; */
+}
+
+/* .banner-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/img/index/Globe_2.jpg");
+
+} */
+
 
 
 .main-caption {
+  height:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top:5%;
+
 }
 
 .line {
@@ -834,10 +847,10 @@ width: 100%;
 }
 
   .main-caption {
-      margin-top:5rem;
+  
     align-items: start;
     width: 100%;
-    position: relative;
+    padding-top:5%;
   }
 
   .caption-logo {
@@ -1062,9 +1075,6 @@ width: 100%;
     z-index: 100;
     right:10%;
 
-
-    /* top:20rem;
-    right: 20rem ; */
 }
 
 .slick-prev:before, .slick-next:before {
@@ -1439,7 +1449,7 @@ margin-left:30%;
   
 
 .quote-content-title{
-  font-size: 3.4rem;
+  font-size: 3rem;
   line-height: 3.5rem;
 }
 

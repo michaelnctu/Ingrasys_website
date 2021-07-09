@@ -68,8 +68,8 @@
 
 
     <div class="leader-wrapper">
-      <div class="card" ">
-      <img src=" /assets/img/about/pcb.jpg" class="card-img-top" alt="...">
+      <div class="card">
+        <img src=" /assets/img/about/photo_Chou.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Tai-Yu Chou</h5>
           <p class="card-text"> President
@@ -77,10 +77,10 @@
         </div>
       </div>
       <div class="card" ">
-          <img src=" /assets/img/about/pcb.jpg" class="card-img-top" alt="...">
+          <img src=" /assets/img/about/photo_Ben.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Benjamin Ting</h5>
-          <p class="card-text">President
+          <p class="card-text">Vice President
           </p>
         </div>
       </div>
@@ -92,7 +92,7 @@
 
   </div>
 
-  <div class="custom-container">
+  <div class="custom-container margin-box">
 
     <div class="title-box title-left">
       <h1 class="about-title"> Our Office</h1>
@@ -116,8 +116,7 @@
 
           <div class="office-container">
 
-
-            {{#each offices}}
+            {{#each offices.usa}}
             <div class="card card-location">
 
               <img src=" /assets/img/about/seattle.jpg" class="card-img-top" alt="...">
@@ -127,13 +126,11 @@
 
                 <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> {{this.address}}
                 </p>
-                <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
+                <a class="card-text card-address" href={{this.address}}>Get Direction</a>
               </div>
             </div>
-
             {{/each}}
-
-
+            {{!--
             <div class="card card-location">
 
               <img src=" /assets/img/about/seattle.jpg" class="card-img-top" alt="...">
@@ -172,7 +169,7 @@
                 </p>
                 <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
               </div>
-            </div>
+            </div> --}}
 
 
 
@@ -186,30 +183,21 @@
           </div>
 
           <div class="office-container">
+
+            {{#each offices.mexico}}
             <div class="card card-location">
-              <img src="/assets/img/about/jua.jpg" class="card-img-top" alt="...">
+
+              <img src=" /assets/img/about/seattle.jpg" class="card-img-top" alt="...">
               <div class="card-body">
 
-                <h class="city-text"> Juárez</h>
-                <p class="card-text card-address"> 2025 Gateway Pl Suite 190
-                  San Jose, CA 95110<br>
-                  +1 408-727-8060
+                <h class="city-text">{{this.city}}</h>
+
+                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> {{this.address}}
                 </p>
+                <a class="card-text card-address" href={{this.address}}>Get Direction</a>
               </div>
             </div>
-
-            <div class="card card-location">
-              <img src="/assets/img/about/gd.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-
-                <h class="city-text"> Guadalajara</h>
-                <p class="card-text card-address"> 2025 Gateway Pl Suite 190
-                  San Jose, CA 95110<br>
-                  +1 408-727-8060
-                </p>
-              </div>
-            </div>
-
+            {{/each}}
           </div>
         </div>
 
@@ -226,52 +214,22 @@
           <div class="country">
             <h4> Taiwan</h4>
           </div>
-
           <div class="office-container">
-
+            {{#each offices.taiwan}}
             <div class="card card-location">
 
-              <img src=" /assets/img/about/taipei.jpg" class="card-img-top" alt="...">
+              <img src=" /assets/img/about/seattle.jpg" class="card-img-top" alt="...">
               <div class="card-body">
 
-                <h class="city-text">Taipei</h>
+                <h class="city-text">{{this.city}}</h>
 
-                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> 2025 Gateway Pl Suite 190
-                  San Jose, CA 95110<br>
-                  <i class="fas fa-phone"></i>+1 408-727-8060
+                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> {{this.address}}
                 </p>
-                <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
+                <a class="card-text card-address" href={{this.map}}>Get Direction</a>
               </div>
             </div>
-            <div class="card card-location">
-              <img src=" /assets/img/about/tao.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-
-                <h class="city-text">Taoyuan</h>
-                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> 2025 Gateway Pl Suite 190
-                  San Jose, CA 95110<br>
-                  <i class="fas fa-phone"></i>+1 408-727-8060
-                </p>
-                <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
-              </div>
-            </div>
-            <div class="card card-location">
-              <img src="/assets/img/about/kaosh.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-
-                <h class="city-text">Kaohsiung </h>
-                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> 2025 Gateway Pl Suite 190
-                  San Jose, CA 95110<br>
-                  <i class="fas fa-phone"></i>+1 408-727-8060
-                </p>
-                <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
-              </div>
-            </div>
-
-
-
+            {{/each}}
           </div>
-
         </div>
 
         <div class="country-section">
@@ -280,18 +238,43 @@
           </div>
 
           <div class="office-container">
+            {{#each offices.china}}
             <div class="card card-location">
-              <img src=" /assets/img/about/tien.jpg" class="card-img-top" alt="...">
+
+              <img src=" /assets/img/about/seattle.jpg" class="card-img-top" alt="...">
               <div class="card-body">
 
-                <h class="city-text"> Tienjin</h>
-                <p class="card-text card-address"> 2025 Gateway Pl Suite 190
-                  San Jose, CA 95110<br>
-                  +1 408-727-8060
+                <h class="city-text">{{this.city}}</h>
+
+                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> {{this.address}}
                 </p>
+                <a class="card-text card-address" href={{this.map}}>Get Direction</a>
               </div>
             </div>
+            {{/each}}
+          </div>
+        </div>
 
+        <div class="country-section">
+          <div class="country">
+            <h4> Singapore</h4>
+          </div>
+
+          <div class="office-container">
+            {{#each offices.singapore}}
+            <div class="card card-location">
+
+              <img src=" /assets/img/about/seattle.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+
+                <h class="city-text">{{this.city}}</h>
+
+                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> {{this.address}}
+                </p>
+                <a class="card-text card-address" href={{this.map}}>Get Direction</a>
+              </div>
+            </div>
+            {{/each}}
           </div>
         </div>
       </div>
@@ -317,11 +300,10 @@
 
                 <h class="city-text">Hungary</h>
 
-                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> 2025 Gateway Pl Suite 190
-                  San Jose, CA 95110<br>
-                  <i class="fas fa-phone"></i>+1 408-727-8060
+                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> Komárom, Bánki Donát u. 1, 2900
+                  Hungary<br>
                 </p>
-                <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
+                <a class="card-text card-address" href="https://goo.gl/maps/iP9JWBqmXVLw3gnx7">Get Direction</a>
               </div>
             </div>
 
@@ -343,11 +325,10 @@
 
                 <h class="city-text">Czech</h>
 
-                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> 2025 Gateway Pl Suite 190
-                  San Jose, CA 95110<br>
-                  <i class="fas fa-phone"></i>+1 408-727-8060
+                <p class="card-text card-address"><i class="fas fa-map-marker-alt"></i> Karlov 245, 284 01 Kutná
+                  Hora,Czech Republic<br>
                 </p>
-                <a class="card-text card-address" href="https://goo.gl/maps/L6Ni5MmhgHSzSMXL8">Get Direction</a>
+                <a class="card-text card-address" href="https://goo.gl/maps/cpM3jQnGSSKm3krG8">Get Direction</a>
               </div>
             </div>
 

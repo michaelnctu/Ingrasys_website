@@ -34,7 +34,9 @@ app.get('/csr', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-  res.render('about', { aboutCSS: true, offices: officeList.usa })
+  console.log(officeList.usa)
+  console.log(officeList.eu)
+  res.render('about', { aboutCSS: true, offices: officeList })
 })
 
 app.get('/cooling', (req, res) => {

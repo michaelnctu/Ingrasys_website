@@ -1,8 +1,8 @@
 section{
-  background-size: 80%;
-  background-position: 50px top ;
-  background-image: url("/assets/img/temp/trial-9.jpg");
-  /* border:solid pink */
+  background-size:cover;
+  background-position:20% -100%;
+  background-image: url("/assets/img/temp/trial-90.png");
+   background-attachment: fixed;
   
 }
 
@@ -39,9 +39,8 @@ section{
   background-image: url("/assets/img/about/pcb.jpg");
 }
 
-.custom-container {
-  padding-bottom: 7rem;
-  
+.margin-box {
+  padding-bottom: 4rem;
 }
 
 
@@ -81,18 +80,25 @@ section{
 
 .card {
   background: transparent;
-  /* box-shadow: 0 0 20px #1167d8 ; */
   height: 400px;
   display:grid;
   grid-template-rows: 75% 20%;
   border:none;
+}
 
+.leader-wrapper .card img {
+  object-fit:contain;
+  object-position:top ;
+  height:100%;  
+  /* width:100%; */
 }
 
 
 .card img {
-  object-fit: cover;
-  height:100%;
+  object-fit:cover;
+  object-position:top ;
+  height:100%;  
+  /* width:100%; */
 }
 
 .card-body {
@@ -213,7 +219,8 @@ section{
 }
 
 .card-location img{
-  opacity:0.4
+  opacity:0.5
+
 }
 
 .city-text{
@@ -260,7 +267,7 @@ section{
 
 
 .story-para p{
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding-top:1rem;
 }
 
