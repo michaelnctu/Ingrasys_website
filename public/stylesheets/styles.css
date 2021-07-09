@@ -454,7 +454,7 @@ display:none;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top:5%;
+  padding-top:20%;
 
 }
 
@@ -608,8 +608,6 @@ canvas{
 
   .focus-description {
     display:none;
-
-
   }
 
 
@@ -728,8 +726,14 @@ canvas{
 
 .quote-img {
   width:100%;
-
 }
+
+ .quote-img img {
+display: block;
+width: 80%;
+margin:auto
+}
+
 .quote-content > .action {
   white-space:nowrap
 }
@@ -990,7 +994,7 @@ width: 100%;
     transform: translate(0%, 50%);
     color: white;
     text-align:left;
-    font-size: 1rem; 
+    font-size: 0.8rem; 
     line-height: 200%;
     text-align: justify-all;
     /* background: rgba(151, 140, 140, 0.55);
@@ -1097,7 +1101,13 @@ width: 100%;
   display:flex;
   flex-direction:column;
   align-items:center;
+  border:solid red;
   
+}
+
+.quote-img img{
+  width:50%;
+  border:solid blue;
 }
 
  .quote-content-title, .quote-content-paragraph {
@@ -1263,10 +1273,8 @@ width: 100%;
 
   
   .focus-description {
-
-    
     font-size: 1.5rem; 
-    line-height: 100%;
+    line-height: 150%;
   
   }
 
@@ -1354,10 +1362,7 @@ width: 100%;
 .focus-name{
     font-size: 2.4rem;
   }
-  
-   .focus-description {
-    font-size: 1.8rem; 
-  }
+
 
 .quote-content-title{
   font-size: 2.7rem;
@@ -1443,9 +1448,6 @@ margin-left:30%;
     font-size: 3rem;
   }
 
-.focus-description {
-    font-size: 2rem; 
-  }
   
 
 .quote-content-title{
