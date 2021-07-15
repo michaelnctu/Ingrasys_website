@@ -160,7 +160,7 @@ h5 {
 
 p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color:white;
 }
 
@@ -238,21 +238,29 @@ img{
 }
 
 .product-content{
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
+        margin: 2rem 0rem;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
+
+}
+
+
+.product-detail h1{
+      line-height: 150%;
 }
 
 
 .product-detail p{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 150%;
     padding: 0.3rem;
     opacity: 0.8;
 }
 .product-detail ul{
     margin: 1rem 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .product-detail ul li{
@@ -262,13 +270,13 @@ img{
     background-size: 18px;
     /* padding-left: 1.7rem; */
     margin: 0.4rem 0;
-    font-weight: 600;
+    font-weight: 450;
     opacity: 0.9;
 }
 
 .processor > img {
   margin-left:0;
-  width:25%;
+  width:18%;
   margin-top:1.5rem;
 }
 
@@ -574,9 +582,19 @@ cursor:pointer
   width:100%;
   display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap:5%;
+  /* grid-gap:-5%; */
   justify-items: center;
   align-items: center;
+
+}
+
+.point-content {
+  /* border:solid blue; */
+}
+
+
+.point-img {
+  /* border:solid pink; */
 }
 
 .point-description{
@@ -637,7 +655,7 @@ td, th{
 
   .app-container{
 
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
 
 }
 }
