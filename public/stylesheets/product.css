@@ -349,7 +349,8 @@ padding-left:2rem;
 }
 
 .point-title{
-  font-size:2rem;
+  text-align:right;
+  font-size:2.1rem;
 }
 
 .graph-right{
@@ -358,6 +359,7 @@ padding-left:2rem;
 
 .point-description{
   margin-top:2rem;
+  font-size:1.5rem;
 }
 
 .certif-container{
@@ -582,20 +584,35 @@ cursor:pointer
   width:100%;
   display:grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-gap:-5%; */
+  grid-gap:0;
   justify-items: center;
   align-items: center;
+  /* border:solid red; */
 
 }
 
-.point-content {
-  /* border:solid blue; */
+/* .point-content {
+  border:solid blue;
+} */
+
+/* .point-img {
+   border:solid pink; 
+   
+} */
+
+.point-img img {
+
+  width:80%;
+  margin:auto;
+}
+
+.graph-right .point-img img {
+  /* border:solid red; */
+  width:80%;
+  margin:0;
 }
 
 
-.point-img {
-  /* border:solid pink; */
-}
 
 .point-description{
   margin-top:2rem;

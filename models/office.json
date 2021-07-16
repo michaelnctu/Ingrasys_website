@@ -30,20 +30,6 @@
     },
     {
       "id": 5,
-      "city": "Mt Pleasant, WI",
-      "address": "8114 County Line Rd, Mt Pleasant, WI 53403",
-      "map": "",
-      "image": ""
-    },
-    {
-      "id": 6,
-      "city": "Sturtevant, WI",
-      "address": "11210 County Line Rd, Sturtevant, WI 53177",
-      "map": "",
-      "image": ""
-    },
-    {
-      "id": 7,
       "city": "Austin, TX",
       "address": "12345 N. Lamar, Suites 250 Austin, TX 78753",
       "map": "https://goo.gl/maps/cpM3jQnGSSKm3krG8",
