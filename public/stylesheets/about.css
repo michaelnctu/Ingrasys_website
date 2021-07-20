@@ -254,20 +254,19 @@ section{
 
 @media screen and (min-width: 768px) {
 
-
 .story-wrapper {
   width:90%;
   margin-left:5%;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap:3%;
+  grid-gap:2%;
   justify-items: center;
   align-items: center;
 }
 
 
 .story-para p{
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-top:1rem;
 }
 
