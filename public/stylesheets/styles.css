@@ -426,7 +426,7 @@ display:none;
 
 .upper-banner {
   min-height: 100vh;
-    background-size: cover;
+  background-size: cover;
   background-position: center;
   background-image: url("/assets/img/index/Globe_2.jpg");
 }
@@ -1337,7 +1337,7 @@ margin-left:25%;
 
 
 h1, h{
-  font-size: 3.75rem;;
+  font-size: 3.2rem;;
 }
 
 p{

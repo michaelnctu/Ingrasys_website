@@ -5,7 +5,7 @@
       "city": "Bellevue, WA",
       "address": "14450 NE 29th Pl #120 Bellevue, WA 98007",
       "map": "https://goo.gl/maps/u55ya3n2YSLiTVQM7",
-      "image": "/assets/img/about/sj.jpg"
+      "image": "/assets/img/about/bellevue.png"
     },
     {
       "id": 2,
@@ -19,7 +19,7 @@
       "city": "San Jose, CA",
       "address": "2025 Gateway Place STE 190 San Jose, CA 95110",
       "map": "https://goo.gl/maps/LgWaT3ZVK8HXmXqD8",
-      "image": ""
+      "image": "/assets/img/about/sanjose.jpg"
     },
     {
       "id": 4,

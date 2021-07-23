@@ -10,6 +10,7 @@ hr{
 }
 
 
+
 .under-header{
   position:absolute;
   top:10rem;
@@ -31,38 +32,24 @@ hr{
 
 }
 
-
-
-.cooling-banner{
-
-  width:70%; 
-  margin-left:30%;
-  height:60vh;
-  overflow:hidden;
-  background-size: 100% 100%;
+.upper-cool{
+  min-height:70vh;
   background-size: cover;
   background-position: bottom;
   background-image: url("/assets/img/cooling/cooldown.jpg");
-
 }
+
 
 .cooling-text {
-  position:absolute;
+  margin-top:20rem;
+  width: 50%;
   padding-left:2.5rem;
-  width:30%;
-  top:55vh;
-  transform: translate(0, -100%);
-  z-index:1
-}
-
-
-.custom-container {
- /* margin-bottom:4em; */
- width:100%;
 
 }
+
+
 .sub-container {
-  padding: 8rem 0;
+  padding: 3rem 0;
 
 }
 
@@ -72,14 +59,20 @@ hr{
   display:none
 }
 
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .nav {
   transform: unset;
 }
 
+
 .nav{
   all:unset;
   position:relative;
-  height:5rem;
+  height:4rem;
   display:flex;
   flex-direction:row;
   align-items:center;
@@ -90,7 +83,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .nav-item {
   text-align:center;
-  font-size:1.5rem;
+  font-size:1.2rem;
   height:100%;
   width:20%;
 }
@@ -122,6 +115,9 @@ cursor:pointer
 .tab-content{
 width:100%;
 overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/img/cooling/staticBG_2.jpg");
 }
 
 /* nav-tabs */
@@ -217,21 +213,37 @@ overflow-x: hidden;
 }
 
 
+.content-img{
+
+  margin-left:10%;
+  width:80%;
+  padding:0 3rem;
+
+}
+
+.content-img img{
+
+  display:block;
+  width:100%;
+  margin:auto;
+}
+
+
 
 .content-sliders {
-
 padding-left:10%;
 padding-right:10%;
 display:grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10%;
   justify-items: center;
-  align-items: center;
+  align-items: start;
 }
 
 .card {
   background:transparent;
-  border:solid white
+  border:solid white;
+  height:580px;
 }
 
 
@@ -261,13 +273,183 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 .standard-title {
   color:#F58522;
-  font-size:1.6em;
+  font-size:1.5rem;
 }
 
   .standard-detail{
-    font-size:1.2em;
+    font-size:1.2rem;
   }
 
 .fa-shield-check {
   color:#40A7F9
+}
+
+/* immersion */
+
+
+  .content-video {
+    padding:10%;
+    width:100%;
+  }
+
+  video {
+    display:block;
+    margin:auto;
+    width:100%;
+  }
+
+
+  .app-container{
+  width:80%;
+  margin-left:10%;
+  padding:3%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 3rem;
+  justify-items: center;
+  align-items: start;
+
+}
+/* 
+.app-item {
+  border:solid blue;
+} */
+
+.app-title{
+  margin-top:5rem;
+  text-align:center;
+}
+
+.item-img {
+  display:block;
+  width:50%;
+  margin:auto;
+  /* padding:30%;; */
+}
+
+.item-title {
+  text-align: center;
+  font-size:1.5rem;
+  color:#F58522
+}
+
+.item-content {
+  text-align:center;
+}
+
+/* spec */
+
+.solution-item {
+  width:100%;
+}
+
+.table {
+  background: rgba(140, 136, 136, 0.2);
+  width:100%;
+}
+
+.first-row{
+  background:rgba(0, 40, 94, 0.8);
+}
+
+/* .table>:not(caption)>*>* {
+    padding: 1.5rem 1rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+} */
+
+td, th{
+  color:white;
+  font-size:1.3rem;
+  line-height:2.6rem;
+}
+
+
+
+.unit-container{
+
+  width:80%;
+  margin-left:10%;
+  padding:1rem;
+}
+
+.solution-container {
+  width:80%;
+  margin-left:10%;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  /* grid-gap: 3rem; */
+  justify-items: center;
+  align-items: center;
+
+}
+
+.rack{
+  width:100%;
+}
+
+.rack img{
+      display: block;
+    margin: auto;
+  width:70%;
+}
+
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+ .side-controls a {
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+ .side-controls a[data-slide=prev] {
+  left: -4rem;
+}
+
+.side-controls a[data-slide=next] {
+  right: -4rem;
+} 
+
+
+@media (min-width: 768px) {
+
+  .content-img{
+  margin-left:10%;
+  width:80%;
+  padding:3rem;
+
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+
+
+
+  .content-video {
+    width:100%;
+    padding:0%;
+    margin-bottom:2rem;
+  }
+
+ video {
+    width:50%;
+    
+  }
+
+  .content-text p{
+  font-size:1.5rem;
+}
+
+
+
+
 }
