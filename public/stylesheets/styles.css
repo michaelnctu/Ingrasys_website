@@ -184,7 +184,7 @@ a:hover{
   width: 100%;
   height:auto;
   margin: 0 auto 0 auto;
-  overflow-y:visible;
+  overflow-y:hidden;
   overflow-x:hidden;
 }
 

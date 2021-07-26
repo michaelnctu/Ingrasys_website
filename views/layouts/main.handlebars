@@ -20,6 +20,10 @@
 
   <link rel="stylesheet" href="/stylesheets/styles.css">
 
+  {{#if dlCSS}}
+  <link rel="stylesheet" href="/stylesheets/dl.css">
+  {{/if}}
+
   {{#if productsCSS}}
   <link rel="stylesheet" href="/stylesheets/products.css">
   {{/if}}
@@ -194,9 +198,7 @@
   {{/if}}
 
   {{#if csrCSS}}
-
   <script type="text/javascript" src="/javascripts/csr.js"></script>
-
   {{/if}}
 
 

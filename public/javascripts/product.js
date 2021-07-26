@@ -24,8 +24,7 @@ window.addEventListener('resize', slideImage);
 
 
 
-// Or with jQuery
-
+// tab 
 $(".dropdown-menu li a").click(function () {
 
   $('.answer').css({ display: 'none' });

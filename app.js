@@ -44,6 +44,10 @@ app.get('/cooling', (req, res) => {
 })
 
 
+app.get('/download', (req, res) => {
+  res.render('download', { dlCSS: true })
+})
+
 
 
 
