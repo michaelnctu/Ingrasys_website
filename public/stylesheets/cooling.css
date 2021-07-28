@@ -13,7 +13,7 @@ hr{
 
 .under-header{
   position:absolute;
-  top:8rem;
+  top:10rem;
 }
 .breadcrumb{
   padding-left:2.5rem;
@@ -30,17 +30,16 @@ hr{
 .breadcrumb-item.active{
   color:#F58522;
   font-size:1rem;
-
 }
 
-.upper-cool{
+ .upper-cool{
   min-height:70vh;
   background-size: cover;
   background-position: bottom;
   background-image: url("/assets/img/cooling/cooldown.jpg");
-  overflow:visible
-  
-}
+  overflow:visible;
+
+} 
 
 
 .cooling-text {
@@ -132,6 +131,7 @@ overflow-x: hidden;
 
 /* nav-tabs */
 @media (min-width: 768px) {
+
 
     .responsive-tabs .dropdown-arrow {
         display: none; 
@@ -239,11 +239,11 @@ overflow-x: hidden;
 
 
 .content-sliders {
- padding:12% 10%;
+ padding:3rem 10%;
  height:auto;
  display:grid;
  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- grid-gap:5%;
+ grid-gap:10%;
   justify-items: center;
   align-items: stretch;
 
@@ -335,19 +335,22 @@ align-items: center;
 
 .item-img {
   display:block;
-  width:50%;
+  width:40%;
   margin:auto;
   /* padding:30%;; */
 }
 
 .item-title {
   text-align: center;
-  font-size:1.5rem;
+  font-size:1.3rem;
+  line-height:2.6rem;
   color:#F58522
 }
 
 .item-content {
-  text-align:center;
+  text-align:left;
+  font-size:1rem;
+
 }
 
 /* spec */
@@ -365,17 +368,12 @@ align-items: center;
   background:rgba(0, 40, 94, 0.8);
 }
 
-/* .table>:not(caption)>*>* {
-    padding: 1.5rem 1rem;
-    background-color: var(--bs-table-bg);
-    border-bottom-width: 1px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
-} */
+
 
 td, th{
   color:white;
-  font-size:1.3rem;
-  line-height:2.6rem;
+  font-size:1rem;
+  line-height:2rem;
 }
 
 
@@ -390,11 +388,9 @@ td, th{
 .solution-container {
   width:80%;
   margin-left:10%;
-  display:grid;
-  grid-template-columns: 50% 50%;
-  /* grid-gap: 3rem; */
-  justify-items: center;
-  align-items: center;
+  padding:2rem 0;
+  display:flex;
+  flex-direction:column-reverse;
 
 }
 
@@ -515,6 +511,16 @@ cursor:pointer
 }
 
 
+.solution-container {
+  width:80%;
+  margin-left:10%;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  /* grid-gap: 3rem; */
+  justify-items: center;
+  align-items: center;
+}
+
 
 
 }
@@ -545,6 +551,15 @@ cursor:pointer
 
 
 @media (min-width: 1280px) {
+
+    .breadcrumb-item a{
+  font-size:unset;
+}
+
+.breadcrumb-item.active{
+  font-size:unset;
+}
+
 
 /* overview */
 .standard-title {
