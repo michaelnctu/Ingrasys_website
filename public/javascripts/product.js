@@ -1,5 +1,10 @@
-const imgs = document.querySelectorAll('.img-select a');
-const imgBtns = [...imgs];
+// image slider
+
+var imgs = document.querySelectorAll('.img-select a');
+console.log(imgs)
+
+// var imgBtns = [...imgs];
+var imgBtns = [].slice.call(imgs);
 let imgId = 1;
 
 imgBtns.forEach((imgItem) => {
@@ -11,7 +16,7 @@ imgBtns.forEach((imgItem) => {
 });
 
 function slideImage() {
-  const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+  var displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
 
   document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
 }
